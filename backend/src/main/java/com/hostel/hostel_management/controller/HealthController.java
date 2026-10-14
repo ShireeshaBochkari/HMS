@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthController {
 
+    @GetMapping("/")
+    public String healthCheck() {
+        return "Hostel Management System is running successfully!";
+    }
+
     @GetMapping({"/health", "/api/healthz"})
     public Map<String, String> health() {
         return Map.of("status", "UP");
