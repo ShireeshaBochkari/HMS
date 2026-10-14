@@ -1,0 +1,9 @@
+**/target/
+.git/
+.github/
+**/.mvn/
+**/mvnw
+**/mvnw.cmd
+**/*.md
+**/.idea/
+**/.vscode/
